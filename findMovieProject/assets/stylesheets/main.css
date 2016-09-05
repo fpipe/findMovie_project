@@ -1,0 +1,590 @@
+body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    background-color: #392720;
+}
+
+/* 
+==================================================
+CLEARFIX
+==================================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/* 
+==================================================
+LINKS
+==================================================
+*/
+
+a {
+	text-decoration: none;
+}
+
+/* 
+==================================================
+HAMBURGER BUTTON
+==================================================
+*/
+
+nav small{
+  color: lightgrey;
+}
+
+#hamburger input {
+    display: none;
+}
+
+#hamburger label,
+#hamburger ul {
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+#hamburger label {
+    color: lightgrey;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 9px 13px;
+    transition: all 0.15s ease;
+}
+
+#hamburger label:hover {
+    color: white;
+}
+
+#hamburger input:checked + label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #9799a7;
+}
+
+#hamburger nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .15s ease;
+}
+
+#hamburger input:checked ~ nav {
+    max-height: 500px;
+    z-index: 1;
+}
+
+#hamburger ul {
+    background-color: #221B19;
+    background: linear-gradient(to right, #362620, #592F1E);
+    list-style: none;
+    margin: 8px 0 0 0;
+    width: 120px;
+}
+
+#hamburger li {
+    border-bottom: 1px solid #cecfd5;
+}
+
+#hamburger li:last-child {
+    border-bottom: 0;
+}
+
+#hamburger a {
+    color: lightgrey;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+#hamburger a:hover {
+    color: white;
+}
+
+#hamburger li:hover {
+    
+    background: linear-gradient(to bottom,#592F1E,#362620);
+}
+
+/* 
+==================================================
+HEADER
+==================================================
+*/
+
+#logo {
+    background-image: url("../images/logo.png");
+	float: left;
+	height: 70px;
+	width: 70px;
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+header {
+	height: 80px;
+	border: 1px solid black;
+    background-color: #392720;
+}
+
+#nav-header {
+	float: right;
+	margin-top: 25px;
+	margin-right: 60px;
+}
+
+#nav-header li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#nav-header a {
+    color: #B57139;
+	font-size: 18px;
+}
+
+#nav-header a:hover {
+	color: #FCB071;
+}
+
+.quickSearch {
+	border-radius: 20px;
+	border: none;
+	height: 40px;
+	width: 230px;
+	color: white;
+	font-size: 16px;
+	font-family: "Lato";
+	background-color: rgba(0,0,0,0.5);
+	letter-spacing: 1px;
+	float: right;
+	margin-top: 18px;
+	margin-right: 30px; 
+}
+
+.quickSearch:focus {
+    outline-width: 0;
+}
+
+#hamburger {
+  z-index: 10;
+  display: none;
+}
+
+#signOut {
+    color: lightgrey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#signOut:hover {
+    color: red;
+}
+
+#userUsername {
+    cursor: pointer;
+}
+/* 
+==================================================
+FOOTER
+================================================= 
+*/
+
+footer {
+	height: 75px;
+	line-height: 50px;
+	text-align: center;
+    background-color: #0F0E0E;
+}
+
+footer nav,
+footer li {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 15px;
+}
+
+footer nav {
+	margin-top: -9px;
+}
+
+footer small {
+	margin-top: -25px;
+	display: block;
+	margin-right: 40px;
+	font-size: 15px;
+	color: white;
+}
+
+footer a {
+	color: lightgrey;
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+footer a:hover {
+	color: white;
+}
+
+/* 
+==================================================
+MAIN SECTION
+================================================== 
+*/
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#mainSection {
+    padding-bottom: 50px;
+    overflow-y: auto;
+    clear: both;
+    height: 2500px;
+    background-color: #CAD9E4;
+    margin-bottom: 0px;
+    background-image: url("../images/back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#randomMovies{
+    display: block;
+    width: 70%;
+    height: 500px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+#mainSection h1{
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.movie-div-template{
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 320px;
+    width: 190px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 4px;
+    box-shadow: 7px 7px 2px #000;
+}
+
+.movie-div-template:hover{
+    z-index: 20;
+    background-color: rgba(74,74,74,0.75);
+}
+
+.poster{
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: transparent;
+    width: 90%;
+    max-height: 250px;
+    text-align: center;
+    clear: both;
+}
+.title{
+    overflow: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "Arial";
+    color: lightgrey;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+    /*display: block;*/
+    vertical-align: bottom;
+}
+
+#moviesToWatch hr {
+    margin-top: 15px;
+    width: 80%;
+    border-color: #4F4C4C;
+}
+
+#moviesToWatch {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#moviesToWatch h1 {
+    font-size: 23px;
+    margin-top: 80px;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#abstract {
+    color: white;
+    height: 400px;
+    text-align: center;
+    background: url("../images/film-tape2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    width: 100%;
+    background-color: rgba(13, 7, 2, 0.9);
+    opacity: 0.8;
+    box-shadow: 0px 40px 30px black;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#introText {
+    float: right;
+}
+
+#introText small:first-child {
+    font-family: "Arial";
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 36px;
+    margin-right: 30px;
+    vertical-align: top;
+    display: block;
+    text-align: right;
+    color: #8C273B;
+    opacity: 1;
+    text-shadow: 3px 3px 4px black;
+    margin-top: 60px;
+}
+
+#introText small:nth-child(2) {
+    font-family: "Arial";
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 18px;
+    margin-right: 20px;
+    vertical-align: top;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 15px darkblue;
+    color: lightgrey;
+}
+
+#searchCategoryList li{
+    display: inline-block;
+    list-style: none;
+}
+#loadingSearch{
+    display: table;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    background-image: url("http://www.sourcebmx.com/Interface/Icons/LoadingBasketContents.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    margin: 0 auto;
+    display: none;
+
+}
+
+#abstract h1{
+    vertical-align: none;
+    height: 50px;
+}
+
+#searchBy{
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato";
+    background-color: rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+    margin-left: 10px;
+}*/
+
+/*section for rendering favourite movies*/
+#favouriteMovies{
+    clear: both;
+    margin-bottom: 10px;
+    font-size: 30px !important;
+}
+/*section for rendering search results*/
+#searchResults{
+    clear: both;
+    margin-bottom: 10px;
+    font-size: 30px !important;
+}
+
+/* 
+==================================================
+MEDIA QUERIES
+==================================================
+*/
+
+@media screen and (max-width: 388px) {
+    footer {
+    	text-align: left;
+    	height: 150px;
+    }
+    footer li {
+    	margin-left: 20px;
+    	display: block;
+    	margin-bottom: -25px;
+    }
+    footer small {
+    	margin-left: 20%;
+    	margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 970px){
+	#nav-header {
+		float: none;
+		margin-top: 80px;
+		margin-left: 50px;
+		margin-right: 0px; 
+	}
+	.quickSearch {
+		margin-top: -35px;
+	}
+	header {
+		height: 115px;
+	}
+}
+
+@media screen and (max-width: 740px){
+    #nav-header {
+		float: none;
+		margin-top: 80px;
+		margin-left: 50px;
+		margin-right: 0px; 
+	}
+	.quickSearch {
+		margin-top: -80px;
+	}
+	header {
+		height: 115px;
+	}
+}
+
+@media screen and (max-width: 500px){
+    header {
+      	height: 140px;
+    }
+    #nav-header {
+      	display: none;
+    }
+    .quickSearch {
+        float: none;
+      	width: 155px;
+      	margin-top: 85px;
+      	margin-left: -155px;
+      	margin-right: 0px;
+    }
+ 	#logo {
+ 		margin-left: 25px;
+ 	}
+	#hamburger {
+		display: inline-block;
+		float: right;
+		margin-top: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 345px){
+   #hamburger {
+   	  margin-left: 16px;
+   	  float: left;
+   }
+   .quickSearch {
+   		float: right;
+   		margin-top: 20px;
+        margin-left: -90px;
+   		width: 170px;
+   }
+   #logo {
+   		margin-left: 23%;
+   }
+}
+@media screen and (max-width: 550px){
+    #quickSearch{
+        margin-left: -90px; 
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #abstract small:first-child {
+        font-size: 27px;
+    }
+    #abstract small:nth-child(2) {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    #abstract small:first-child {
+        font-size: 24px;
+    }
+    #abstract small:nth-child(2) {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 926px) {
+    #abstract {
+        background-size: auto 600px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #abstract {
+        background-size: auto 450px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #introText {
+        width: 300px;
+    }
+    #abstract {
+        background-size: auto 450px;
+        height: 300px;
+    }
+    #abstract small {
+    	text-align: left;
+		margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #randomMovies {
+    	width: 280px;
+    }
+    #abstract {
+    	height: 250px;
+    	background-size: auto 320px;
+    }
+}
+
+
+
+
+

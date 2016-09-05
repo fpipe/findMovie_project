@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+
+<head>
+	<title>Find movie to watch</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a web site where you can find your next movie to watch">
+	<meta name="keywords" content="RandomMovies,Movies,Random,Watch,MovieSuggestions,FindMovie,">
+	<meta name="author" content="Filip Simonovski">
+	<base href="home.html">
+	<!-- LINKING -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link href='assets/fonts/Lato/Lato-Regular.ttf' rel='stylesheet' type='text/css'>
+	<link rel='icon' href=assets/images/logo.png sizes="16x16" type="image/png">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-popup_show_movie.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-about.css">
+</head>
+
+<!-- BODY -->
+
+<body>
+
+<!-- MAIN CONTAINER -->
+
+<!-- HEADER -->
+
+<header class="clearfix">
+
+	<!-- LOGO -->
+	
+	<div id="logo"></div>
+	
+	<!-- HAMBURGER NAVIGATION -->
+
+	<div id="hamburger">
+		<input type="checkbox" id="toggle">
+		<label for="toggle">&#9776;</label>
+		<nav>
+		  <ul>
+		    <li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		  </ul>
+		</nav>
+	</div>
+	
+	<!-- NAVIGATION -->
+
+	<nav id="nav-header">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html" style="border-bottom:2px solid #B57139 ;padding-bottom:2px">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<!-- SEARCH -->
+
+	<!-- <input type="text" name="search" placeholder=" Search..." id="quickSearch" results=5> -->	
+	
+<!-- HEADER END -->
+
+</header>
+
+<!-- MAIN SECTION -->
+
+<section id="mainSection">
+	<section id="aboutUsSection">
+		<small id="aboutUsSmall">About Us</small>
+		<p id="aboutUsText">
+		We are web site where you can find your next movie to watch manualy or random generated, view movie on IMDB, watch trailer on YouTube or watch full movie on PutLocker. You can manage with you movies by adding to your favourite watch list and watch them later.
+		</br>
+		</br>
+		Enjoy in our website :)
+		</p>
+
+		<div id="developers">
+			<small id="sectionHeader">Developer Team</small>
+			<div id="centering">
+				<!-- Filip Simonovski div -->
+				<div id="divFilip" class="col-mid-2 hover-effect">
+					<a href="https://www.facebook.com/filip.simonovski3" target="_blank">
+						<img width="150px" src="assets/images/filip.jpg">
+						<div class="name">Filip Simonovski</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<section id="location">
+			<small id="sectionHeader">Location</small>
+			<div id="embedMap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.60892394221!2d21.354849489074947!3d41.999196488278585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1467709458776" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+		</section>
+		
+	</section>
+</section>
+
+<!-- MAIN SECTION ENDS-->
+
+<!-- FOOTER -->
+
+<footer class="clearfix">
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<small>&copy 2016 Copyright Filip Simonovski</small>
+
+	<!-- FOOTER END -->
+
+</footer>
+
+<script src="assets/jQuery/jquery-3.0.0.min.js"></script>
+<!-- <script src="assets/scripts/showMovie_plugin.js"></script> -->
+<script src="assets/scripts/userManagement.js"></script>
+<!-- <script src="assets/scripts/quickSearch.js"></script>
+<script src="assets/scripts/ajaxOmdb.js"></script>
+ -->
+<!-- MAIN CONTAINER END -->
+
+</body>
+</html>
+

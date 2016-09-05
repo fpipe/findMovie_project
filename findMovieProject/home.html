@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+
+<head>
+	<title>Find movie to watch</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a web site where you can find your next movie to watch">
+	<meta name="keywords" content="RandomMovies,Movies,Random,Watch,MovieSuggestions,FindMovie,">
+	<meta name="author" content="Filip Simonovski">
+	<base href="home.html">
+	<!-- LINKING -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link href='assets/fonts/Lato/Lato-Regular.ttf' rel='stylesheet' type='text/css'>
+	<link rel='icon' href=assets/images/logo.png sizes="16x16" type="image/png">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-popup_show_movie.css">
+</head>
+
+<!-- BODY -->
+
+<body>
+
+<!-- MAIN CONTAINER -->
+
+<!-- HEADER -->
+
+<header class="clearfix">
+
+	<!-- LOGO -->
+	
+	<div id="logo"></div>
+	
+	<!-- HAMBURGER NAVIGATION -->
+
+	<div id="hamburger">
+	<input type="checkbox" id="toggle">
+	<label for="toggle">&#9776;</label>
+		<nav>
+		  <ul>
+		    <li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		  </ul>
+		</nav>
+	</div>
+	<!-- NAVIGATION -->
+
+	<nav id="nav-header">
+		<ul>
+			<li><a href="home.html" style="border-bottom:2px solid #B57139 ;padding-bottom:2px">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<!-- SEARCH -->
+	<input type="text" name="search" placeholder=" Search..." id="quickSearch" class="quickSearch" results=10>
+		
+	
+<!-- HEADER END -->
+
+</header>
+
+<!-- MAIN SECTION -->
+
+<section id="mainSection">
+
+<!-- VIEW MOVIE -->
+
+<div id="viewMovie" class="view-movie clearfix">
+	
+	<!-- abstract -->
+	<div id="abstract">
+		<div id="wrapper">
+			<div id="introText" class="clearfix">
+				<small>WE MAKE MOVIE REVIEWING EASIER</small>
+				<small>Browse for movies, create watchlists and enjoy...</small>
+			</div>
+		</div>
+	</div>
+
+	<!-- POP UP SHOW MOVIE -->
+	<div id="popUpShowMovieDiv" clearfix" class="modal">
+
+	  <div class="modal-content clearfix">
+	    <span class="close">x</span>
+	    <!-- Show Title -->
+	    <p id="showMovieTitle"></p>
+	    <!-- Add to favourite -->
+	    <div id="addFavourite">Add to favourites</div>
+
+	   	<!-- Show Poster -->
+	    <div id="moviePoster"></div>
+
+	    <!-- Show Movie Details -->
+	    <article id="movieDetails">
+	    	<!-- Show Release Year -->
+	    	<p id="movieYear"><small id="sm"></small></p>
+	    	<!-- Show Genre -->
+	    	<p id="movieGenre"></p>
+	    	<!-- Show Country -->
+	    	<p id="movieCountry"></p>
+	    	<!-- Show Director -->
+	    	<p id="movieDirector"></p>
+	    	<!-- Show Cast -->
+	    	<p id="movieActors"></p>
+	    	<!-- Show Plot -->
+	    	<p id="moviePlot"></p>
+	    </article>
+	  </div>
+
+	</div>
+
+
+	<!-- movies to watch -->
+	<div id="moviesToWatch">
+		<h1>Movies you should watch</h1>
+		<hr/>
+		<!-- RANDOM MOVIES SECTION -->
+		<section id="randomMovies"></section>
+
+		<!-- DIV TEMPLATE -->
+
+		<!-- "<article id='" + i + "' class='movie-div-template'>
+		<div id='poster" + i + "' class='poster'></div><p id='title" + i + "' class='title'></p></article>" -->
+	</div>
+
+<!-- VIEW MOVIE END -->
+
+</div>
+
+<!-- MAIN SECTION END -->
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="clearfix">
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<small>&copy Copyright Filip Simonovski</small>
+
+	<!-- FOOTER END -->
+
+</footer>
+
+<script src="assets/jQuery/jquery-3.0.0.min.js"></script>
+<script src="assets/scripts/showMovie_plugin.js"></script>
+<script src="assets/scripts/userManagement.js"></script>
+<script src="assets/scripts/quickSearch.js"></script>
+<script src="assets/scripts/ajaxOmdb.js"></script>
+
+<!-- MAIN CONTAINER END -->
+
+</body>
+
+
+</html>
+

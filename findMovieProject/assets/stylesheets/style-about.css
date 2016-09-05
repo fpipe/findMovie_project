@@ -1,0 +1,148 @@
+.col-mid-2 {
+	border-radius: 10px;
+	display: inline-block;
+	width: 39%;
+}
+
+.beResponsive{
+	float: left;
+}
+
+.hover-effect:hover{
+	background-color: grey;
+}
+
+#aboutUsSmall {
+	width: 120px;
+	display: block;
+	margin: 50px auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	padding: 16px;
+	color: lightgrey;
+	border-radius: 23px;
+	font-size: 22px;
+}
+
+#aboutUsText {
+	width: 800px;
+	display: block;
+	margin: 0px auto 0px auto;
+	text-align: center;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	color: lightgrey;
+	padding-bottom: 70px;
+}
+
+#sectionHeader {
+	width: 160px;
+	display: block;
+	margin: 0px auto 30px auto;
+	text-align: center;
+	padding: 8px;
+	color: #1C1310;
+	color: lightgrey;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-bottom: 2px solid lightgrey;
+}
+
+#developers {
+	width: 550px;
+	margin: 0px auto;
+	margin-top: 20px;
+	display: block;
+}
+
+#centering {
+	display: block;
+	width: 450px;
+	margin: 0px auto;
+}
+
+#centering div:first-child {
+	margin-right: 50px;
+}
+
+#developers div {
+	padding: 10px;
+}
+
+#developers img {
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto;
+	border: 5px solid #A3E15A;
+	margin-bottom: 20px;
+}
+
+.name {
+	text-align: center;
+	color: lightgrey;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 25px;
+	font-size: 13px;
+	padding: 5px !important;
+	width: 120px;
+	display: block !important;
+	margin: 0px auto;
+}
+
+#location {
+	margin-top: 60px;
+}
+
+#aboutUsSection {
+	background-color: rgba(0,0,0,0.5) !important;
+	margin-top: -50px;
+	width: 100%;
+	height: 110%;
+	margin-bottom: -50px;
+	padding-top: 50px;
+}
+
+#embedMap{
+	text-align: center;
+}
+#mainSection{
+	height: 1100px;
+}
+
+
+#divFilip img:hover {
+	border-color: #C44343;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+@media screen and (max-width: 870px) {
+    #aboutUsText {
+    	width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #aboutUsText {
+    	width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #aboutUsText {
+    	width: 250px;
+    	text-align: justify;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    #developers {
+    	width: 220px;
+    }
+}
+@media screen and (min-width: 535px) {
+    #divFilip {
+    	display: block;
+    	margin: auto !important;
+    }
+}

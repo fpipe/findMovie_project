@@ -1,0 +1,159 @@
+/* 
+==================================================
+Login/Register Page
+================================================= 
+*/
+
+#quickSearch {
+	display: none;
+}
+
+#userManagementDiv {
+	width: 50%;
+	display: block;
+	margin: 0px auto;
+}
+
+#signUpContainer,
+#loginContainer {
+	width: 49%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 80px;
+}
+
+#loginForm,
+#signUpForm {
+	width: 210px;
+	display: block;
+	margin: 0px auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 10px 15px 15px 15px;
+}
+
+#loginForm h1,
+#signUpForm h1 {
+	padding: 0px 0px 20px 0px;
+	color: lightgrey;
+	font-weight: bold;
+}
+#incorrectLogin{
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: red;
+}
+
+#intro {
+	clear: both !important;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	color: lightgrey;
+	font-size: 17px;
+}
+
+#loginForm #loginUsername,
+#loginForm #loginPassword,
+#signUpForm #username,
+#signUpForm #age,
+#signUpForm #email,
+#signUpForm #confirmPassword,
+#signUpForm #password {
+	width: 210px;
+	height: 25px;
+	margin-bottom: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	outline: none;
+	background-color: #413734;
+	color: #CD526C;
+	font-weight: bold;
+}
+
+#loginForm #loginUsername:focus,
+#loginForm #loginPassword:focus,
+#signUpForm #username:focus,
+#signUpForm #age:focus,
+#signUpForm #email:focus,
+#signUpForm #confirmPassword:focus,
+#signUpForm #password:focus {
+	background-color: #FEFFEB;
+}
+
+#signUpContainer #age {
+	width: 46px;
+}
+
+#signUp,
+#login {
+	display: block;
+	width: 70px;
+	margin: 0px auto;
+	border-radius: 5px;
+	padding: 6px 8px;
+	border: none;
+	background: linear-gradient(to bottom, #681728, #B04158, #681728);
+	color: lightgrey;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#signUp:hover,
+#login:hover {
+	background: linear-gradient(to bottom, #B04158, #681728, #B04158);
+	color: white;
+}
+
+/* 
+==================================================
+MEDIA QUERIES
+================================================= 
+*/
+
+@media screen and (max-width: 1160px) {
+    #userManagementDiv {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 970px) {
+    #userManagementDiv {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+    #userManagementDiv {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 710px) {
+    #userManagementDiv {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 610px) {
+    #userManagementDiv {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+    #signUpContainer {
+    	display: block;
+    }
+    #signUpContainer,
+    #loginContainer {
+    	display: block;
+    	margin: 0px auto;
+    }
+}
+
+

@@ -1,0 +1,124 @@
+#abstract-searchBy {
+    height: 180px;
+    width: 1000px;
+    display: block;
+    margin: 0px auto;
+    background-color: rgba(233, 220, 220, 0.4);
+    background-color: rgba(13, 7, 2, 0.6);
+    color: white;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+#searchCategoryList {
+	text-align: center;
+}
+
+#searchBox {
+	border-radius: 20px;
+	display: block;
+	margin: 0px auto;
+	border: none;
+	height: 40px;
+	width: 330px;
+	color: white;
+	font-size: 16px;
+	font-family: "Lato";
+	background-color: #242424;
+	background-color: rgba(0,0,0,0.5);
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+
+#searchBox:focus {
+	outline-width: 0px;
+}
+
+#abstract-searchBy ul li {
+	margin: 0px 10px;
+}
+
+#searchResults {
+	display: block;
+	width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: rgba(243, 243, 220, 0.4);
+}
+
+#resultsText {
+	width: 1000px;
+	margin: 0px auto;
+	color: black;
+	border-bottom: 1px solid black;
+}
+#backToTop {
+    float: right;
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    margin: auto -20px 0px auto;
+
+}    
+
+.movie-fiv-template{
+    float: left;
+    clear: right;
+}
+/* 
+==================================================
+MEDIA QUERIES
+==================================================
+*/
+
+@media screen and (max-width: 1050px) {
+    #abstract-searchBy {
+    	width: 800px;
+    }
+    #resultsText {
+    	width: 800px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #abstract-searchBy {
+    	width: 650px;
+    }
+    #resultsText {
+    	width: 650px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    #abstract-searchBy {
+    	width: 100%;
+    }
+    #resultsText {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #searchBox {
+	width: 250px;
+	}
+}
+
+/*responsiveness for the search results:*/
+@media screen and (max-width: 960px) {
+    #searchResults {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #searchResults {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #searchResults {
+        width: 300px;
+    }
+}

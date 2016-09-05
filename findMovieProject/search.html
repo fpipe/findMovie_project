@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+
+<head>
+	<title>Find movie to watch</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a web site where you can find your next movie to watch">
+	<meta name="keywords" content="RandomMovies,Movies,Random,Watch,MovieSuggestions,FindMovie,">
+	<meta name="author" content="Filip Simonovski">
+	<base href="home.html">
+	<!-- LINKING -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css-reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link href='assets/fonts/Lato/Lato-Regular.ttf' rel='stylesheet' type='text/css'>
+	<link rel='icon' href=assets/images/logo.png sizes="16x16" type="image/png">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-popup_show_movie.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-search.css">
+</head>
+
+<!-- BODY -->
+
+<body id="top">
+
+
+<!-- MAIN CONTAINER -->
+
+<!-- HEADER -->
+
+<header id="header" class="clearfix">
+
+	<!-- LOGO -->
+	
+	<div id="logo"></div>
+	
+	<!-- HAMBURGER NAVIGATION -->
+
+	<div id="hamburger">
+	<input type="checkbox" id="toggle">
+	<label for="toggle">&#9776;</label>
+	<nav>
+	  <ul>
+	    <li><a href="home.html">Home</a></li>
+	    <li><a href="search.html">Search by</a></li>
+	    <li><a href="about.html">About us</a></li>
+	    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+	  </ul>
+	</nav>
+	</div>
+	
+	<!-- NAVIGATION -->
+
+	<nav id="nav-header">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		    <li><a href="search.html" style="border-bottom:2px solid #B57139 ;padding-bottom:2px">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<!-- SEARCH -->
+
+	<!-- <input type="text" name="search" placeholder=" Search..." id="quickSearch" results=5> -->
+	
+<!-- HEADER END -->
+
+</header>
+
+
+
+<!-- MAIN SECTION -->
+
+<section id="mainSection">
+
+	<div id="abstract-searchBy">
+		<!-- Search form -->
+		<div id="chooseSearchCategory">
+				<input type="text" name="searchBy" placeholder=" Search by Title..." id="searchBox" results=10>
+					<ul id="searchCategoryList">
+				    <!-- <li><input class="searchCategory" type="radio" name="search" value="Title" checked> Title</li>
+ -->				    <!-- <li><input class="searchCategory" type="radio" name="search" value="Year"> Year</li> -->
+				    <!-- <li><input class="searchCategory" type="radio" name="search" value="Cast"> Cast</li>
+				    <li><input class="searchCategory" type="radio" name="search" value="Director"> Director</li>
+				    <li><input class="searchCategory" type="radio" name="search" value="Genre"> Genre</li> -->
+				    <li><input id="checkBoxShowPosterMoviesShow" type="checkbox" name="checkBoxShowPosterMoviesShow">Show movies without posters</li>
+				</ul>
+
+		</div>
+
+	</div>
+
+	<div id="loadingSearch"></div>
+	<h1 id="resultsText">Search results:</h1>
+	<section id="searchResults">
+	</section>
+
+	<a id="backToTop" href="search.html#abstract-searchBy" ><img height="80px" src="assets/images/backToTop.ico"></a>
+
+	</section>
+
+	<!-- POP UP SHOW MOVIE -->
+	<div id="popUpShowMovieDiv" clearfix" class="modal">
+	
+	  <div class="modal-content clearfix">
+	    <span class="close">x</span>
+	    Show Title
+	    <p id="showMovieTitle"></p>
+	    Add to favourite
+	    <div id="addFavourite">Add to favourites</div>
+	
+	   	Show Poster
+	    <div id="moviePoster"></div>
+	
+	    Show Movie Details
+	    <article id="movieDetails">
+	    	Show Release Year
+	    	<p id="movieYear"><small id="sm"></small></p>
+	    	Show Genre
+	    	<p id="movieGenre"></p>
+	    	Show Country
+	    	<p id="movieCountry"></p>
+	    	Show Director
+	    	<p id="movieDirector"></p>
+	    	Show Cast
+	    	<p id="movieActors"></p>
+	    	Show Plot
+	    	<p id="moviePlot"></p>
+	    </article>
+	  </div>
+	</div>
+
+<!-- MAIN SECTION END -->	
+
+<!-- FOOTER -->
+
+<footer class="clearfix">
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		    <li><a href="search.html">Search by</a></li>
+		    <li><a href="about.html">About us</a></li>
+		    <li class="loginNavLink"><a href="login_register.html">Login | Register</a></li>
+		</ul>
+	</nav>
+
+	<small>&copy Copyright Filip Simonovski</small>
+
+	<!-- FOOTER END -->
+
+</footer>
+
+<script src="assets/jQuery/jquery-3.0.0.min.js"></script>
+<script src="assets/scripts/searchBy.js" ></script>
+<script src="assets/scripts/showMovie_plugin.js"></script>
+<script src="assets/scripts/userManagement.js"></script>
+<!-- <script src="assets/scripts/quickSearch.js"></script> -->
+<!-- <script src="assets/scripts/ajaxOmdb.js"></script> -->
+
+<!-- MAIN CONTAINER END -->
+
+</body>
+
+
+</html>
+
